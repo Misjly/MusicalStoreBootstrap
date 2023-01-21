@@ -1,0 +1,67 @@
+$body-font: Verdana, Geneva, Tahoma, sans-serif;
+$h-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$black-transparent: rgba(0, 0, 0, 0.5);
+$dark-blue: rgb(0, 19, 124);
+$butter: rgb(255, 255, 210);
+$light-purple: rgb(170, 150, 218);
+$light-purple-transparent: rgba(170, 150, 218, 0.8);
+$mint: rgb(197, 250, 213);
+$transparent: rgba(0, 0, 0, 0.05);
+
+body {
+    font-family: $body-font;
+    background-image: linear-gradient(to bottom, $light-purple, white, white, white, $butter);
+}
+
+h1, h2, h3 {
+    font-family: $h-font;
+}
+
+h2 {
+    color: $dark-blue;
+}
+
+.site-footer {
+    background-image: linear-gradient($butter, $mint);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $light-purple, $mint, $butter);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: $light-purple-transparent;
+    color: black;
+}
+
+.breadcrumb {
+    background-color: $transparent;
+}
+
+.carousel {
+    border: solid black;
+    padding: 0;
+    border-radius: 1rem;
+    border-width: 1rem;
+}
+
+.instrumentCarouselImg img {
+    width: auto;
+    height: 350px;
+    max-height: 350px;
+}
+
+.carousel-caption {
+    background-color: $black-transparent;
+}

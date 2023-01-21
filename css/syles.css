@@ -1,0 +1,45 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to bottom, #aa96da, white, white, white, #ffffd2); }
+
+h1, h2, h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+
+h2 {
+  color: #00137c; }
+
+.site-footer {
+  background-image: linear-gradient(#ffffd2, #c5fad5);
+  padding: 20px 0; }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #aa96da, #c5fad5, #ffffd2);
+  color: white; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: rgba(170, 150, 218, 0.8);
+  color: black; }
+
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.carousel {
+  border: solid black;
+  padding: 0;
+  border-radius: 1rem;
+  border-width: 1rem; }
+
+.instrumentCarouselImg img {
+  width: auto;
+  height: 350px;
+  max-height: 350px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
