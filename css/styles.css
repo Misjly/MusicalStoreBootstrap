@@ -63,25 +63,45 @@ h2 {
   background-color: rgba(0, 0, 0, 0.2); }
 
 .button-dark:hover {
-  background-color: #818181; }
+  background-color: #6c6b6b; }
 
 .button-dark:focus {
-  box-shadow: 0 0 0 5px #c2c2c2; }
+  box-shadow: 0 0 0 5px #989595; }
 
 .button-mid {
   background-color: #E6C17A; }
 
 .button-mid:hover {
-  background-color: #fdae1c; }
+  background-color: #e0b566; }
 
 .button-mid:focus {
-  box-shadow: 0 0 0 5px #f8daa1; }
+  box-shadow: 0 0 0 5px #fbe1b5; }
 
 .button-bright {
   background-color: #F6EDE3; }
 
 .button-bright:hover {
-  background-color: #fdae1c; }
+  background-color: #fffbf7; }
 
 .button-bright:focus {
   box-shadow: 0 0 0 5px #ffffff; }
+
+a {
+  color: #404041; }
+
+a:hover {
+  color: #6c6b6b; }
+
+a:focus {
+  color: #989595; }
+
+#findButton {
+  width: 100%; }
+
+#findContainer {
+  padding: 0; }
+  #findContainer:active {
+    box-shadow: 0rem 0rem 1rem #989595; }
+
+.activated {
+  box-shadow: 0rem 0rem 0.5rem 0.5rem #D3CAE2; }

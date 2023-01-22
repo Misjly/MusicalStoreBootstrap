@@ -3,7 +3,6 @@ $font-h: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Uni
 $font-button: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 $color-black-transparent: rgba(0, 0, 0, 0.2);
-$color-dark-blue: rgb(0, 19, 124);
 $color-transparent: rgba(0, 0, 0, 0.05);
 
 $color-background: #F6EDE3;
@@ -11,12 +10,12 @@ $color-text: #404041;
 $color-gradient-first: #E6C17A;
 $color-gradient-second: #D3CAE2;
 
-$color-dark-hover: #818181;
-$color-mid-hover: #fdae1c;
+$color-dark-hover: #6c6b6b;
+$color-mid-hover: #e0b566;
 $color-bright-hover: #fffbf7;
 
-$color-dark-focus: #c2c2c2;
-$color-mid-focus: #f8daa1;
+$color-dark-focus: #989595;
+$color-mid-focus: #fbe1b5;
 $color-bright-focus: #ffffff;
 
 body {
@@ -125,9 +124,34 @@ h2 {
 }
 
 .button-bright:hover {
-    background-color: $color-mid-hover;
+    background-color: $color-bright-hover;
 }
 
 .button-bright:focus {
     box-shadow: 0 0 0 5px $color-bright-focus;
+}
+
+a {
+    color: $color-text;
+}
+a:hover {
+    color: $color-dark-hover;
+}
+a:focus {
+    color: $color-dark-focus;
+}
+
+#findButton {
+    width: 100%;
+}
+
+#findContainer {
+    padding: 0;
+    &:active {
+        box-shadow: 0rem 0rem 1rem $color-dark-focus;
+    }
+}
+
+.activated {
+    box-shadow: 0rem 0rem 0.5rem 0.5rem $color-gradient-second;
 }
