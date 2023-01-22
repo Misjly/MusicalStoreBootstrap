@@ -1,31 +1,32 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: linear-gradient(to bottom, #aa96da, white, white, white, #ffffd2); }
+  background-color: #F6EDE3; }
 
 h1, h2, h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 h2 {
-  color: #00137c; }
+  color: #404041; }
 
 .site-footer {
-  background-image: linear-gradient(#ffffd2, #c5fad5);
-  padding: 20px 0; }
+  background-image: linear-gradient(to left, #E6C17A, #D3CAE2);
+  padding: 30px 0; }
 
 .jumbotron {
   margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(to right, #aa96da, #c5fad5, #ffffd2);
-  color: white; }
+  padding: 20px 0px 20px;
+  background-image: linear-gradient(to right, #E6C17A, #D3CAE2);
+  color: #404041; }
 
 .row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px; }
+  padding: 1rem 0;
+  border-bottom: 2px solid #D3CAE2;
+  min-height: 300px; }
 
 .navbar {
-  background-color: rgba(170, 150, 218, 0.8);
-  color: black; }
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #404041;
+  padding: 0; }
 
 .breadcrumb {
   background-color: rgba(0, 0, 0, 0.05); }
@@ -42,4 +43,45 @@ h2 {
   max-height: 350px; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.modal .modal-header {
+  background-image: linear-gradient(to right, #E6C17A, #D3CAE2); }
+
+.modal .modal-body {
+  background-color: #F6EDE3; }
+
+.btn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #404041; }
+
+.btn:hover {
+  transition-timing-function: ease-in-out;
+  transition: width 2s; }
+
+.button-dark {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.button-dark:hover {
+  background-color: #818181; }
+
+.button-dark:focus {
+  box-shadow: 0 0 0 5px #c2c2c2; }
+
+.button-mid {
+  background-color: #E6C17A; }
+
+.button-mid:hover {
+  background-color: #fdae1c; }
+
+.button-mid:focus {
+  box-shadow: 0 0 0 5px #f8daa1; }
+
+.button-bright {
+  background-color: #F6EDE3; }
+
+.button-bright:hover {
+  background-color: #fdae1c; }
+
+.button-bright:focus {
+  box-shadow: 0 0 0 5px #ffffff; }
