@@ -2,6 +2,7 @@ $font-body: Verdana, Geneva, Tahoma, sans-serif;
 $font-h: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $font-button: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+$color-black: rgba(0, 0, 0, 0.6);
 $color-black-transparent: rgba(0, 0, 0, 0.2);
 $color-transparent: rgba(0, 0, 0, 0.05);
 
@@ -21,6 +22,47 @@ $color-bright-focus: #ffffff;
 body {
     font-family: $font-body;
     background-color: $color-background;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgContainer {
+    max-width: 100%;
+    height: 17em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: $color-background;
+    border: 0;
+    margin: 1rem;
+    box-shadow: 15px 5px 15px $color-black;
+    min-height: 350px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.button-square {
+    border-radius: 0;
+    background-color: $color-transparent !important;
+    color: white !important;
+}
+
+.button-square:hover {
+    background-color: $color-black-transparent !important;
+    color: $color-gradient-second !important;
+}
+
+.button-square:focus {
+    background-color: $color-black !important;
+    color: $color-gradient-first !important;
 }
 
 h1, h2, h3 {
@@ -45,7 +87,7 @@ h2 {
 
 .row-content {
     padding: 1rem 0;
-    border-bottom: 2px solid $color-gradient-second;
+    border-top: 2px solid $color-gradient-second;
     min-height: 300px;
 }
 
@@ -53,6 +95,7 @@ h2 {
     background-color: $color-black-transparent;
     color: $color-text;
     padding: 0;
+    border-radius: 5px;
 }
 
 .breadcrumb {
@@ -60,20 +103,30 @@ h2 {
 }
 
 .carousel {
-    border: solid black;
+    border: 0;
     padding: 0;
-    border-radius: 1rem;
-    border-width: 1rem;
+}
+
+.carouselInner {
+    padding: 1rem;
+}
+
+@media (min-width:768px) {
+    .carousel-inner {
+        display: flex;
+    }
+    
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(33.333333%);
+    }
 }
 
 .instrumentCarouselImg img {
     width: auto;
     height: 350px;
     max-height: 350px;
-}
-
-.carousel-caption {
-    background-color: $color-black-transparent;
 }
 
 .modal {
@@ -104,7 +157,7 @@ h2 {
 }
 
 .button-dark:focus {
-    box-shadow: 0 0 0 5px $color-dark-focus;
+    box-shadow: 0 0 0.5rem $color-dark-focus;
 }
 
 .button-mid {
@@ -116,7 +169,7 @@ h2 {
 }
 
 .button-mid:focus {
-    box-shadow: 0 0 0 5px $color-mid-focus;
+    box-shadow: 0 0 0.5rem $color-mid-focus;
 }
 
 .button-bright {
@@ -128,7 +181,7 @@ h2 {
 }
 
 .button-bright:focus {
-    box-shadow: 0 0 0 5px $color-bright-focus;
+    box-shadow: 0 0 0.5rem $color-bright-focus;
 }
 
 a {

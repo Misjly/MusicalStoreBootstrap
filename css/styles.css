@@ -2,6 +2,40 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #F6EDE3; }
 
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.imgContainer {
+  max-width: 100%;
+  height: 17em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.card {
+  background-color: #F6EDE3;
+  border: 0;
+  margin: 1rem;
+  box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.6);
+  min-height: 350px; }
+
+.card-body {
+  padding: 0; }
+
+.button-square {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: white !important; }
+
+.button-square:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #D3CAE2 !important; }
+
+.button-square:focus {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #E6C17A !important; }
+
 h1, h2, h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
@@ -20,30 +54,37 @@ h2 {
 
 .row-content {
   padding: 1rem 0;
-  border-bottom: 2px solid #D3CAE2;
+  border-top: 2px solid #D3CAE2;
   min-height: 300px; }
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.2);
   color: #404041;
-  padding: 0; }
+  padding: 0;
+  border-radius: 5px; }
 
 .breadcrumb {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .carousel {
-  border: solid black;
-  padding: 0;
-  border-radius: 1rem;
-  border-width: 1rem; }
+  border: 0;
+  padding: 0; }
+
+.carouselInner {
+  padding: 1rem; }
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex; }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(33.333333%); } }
 
 .instrumentCarouselImg img {
   width: auto;
   height: 350px;
   max-height: 350px; }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.2); }
 
 .modal .modal-header {
   background-image: linear-gradient(to right, #E6C17A, #D3CAE2); }
@@ -66,7 +107,7 @@ h2 {
   background-color: #6c6b6b; }
 
 .button-dark:focus {
-  box-shadow: 0 0 0 5px #989595; }
+  box-shadow: 0 0 0.5rem #989595; }
 
 .button-mid {
   background-color: #E6C17A; }
@@ -75,7 +116,7 @@ h2 {
   background-color: #e0b566; }
 
 .button-mid:focus {
-  box-shadow: 0 0 0 5px #fbe1b5; }
+  box-shadow: 0 0 0.5rem #fbe1b5; }
 
 .button-bright {
   background-color: #F6EDE3; }
@@ -84,7 +125,7 @@ h2 {
   background-color: #fffbf7; }
 
 .button-bright:focus {
-  box-shadow: 0 0 0 5px #ffffff; }
+  box-shadow: 0 0 0.5rem #ffffff; }
 
 a {
   color: #404041; }
