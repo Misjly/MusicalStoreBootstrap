@@ -94,7 +94,6 @@ h2 {
 .navbar {
     background-color: $color-black-transparent;
     color: $color-text;
-    padding: 0;
     border-radius: 5px;
 }
 
@@ -207,4 +206,14 @@ a:focus {
 
 .activated {
     box-shadow: 0rem 0rem 0.5rem 0.5rem $color-gradient-second;
+}
+
+#loginTitle {
+    background-color: $color-gradient-first;
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 0.5rem;
+}
+
+#loginCard {
+    min-width: 32rem;
 }
