@@ -24,18 +24,18 @@
                     <a href="index.html"><img src="img/note.png" class="img-fluid" /></a>
                 </div>
 
-                <div class="col col-12 col-md-4 col-xl-2 ml-auto" id="findContainer">
-                    <a class="btn btn-lg text-nowrap button-bright" id="findButton">Find a teacher</a>
+                <div class="col col-12 col-md-4 col-xl-2 ml-auto" id="repairContainer">
+                    <a class="btn btn-lg text-nowrap button-bright" id="repairButton">Repair instrument</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="findModal" class="modal fade" role="dialog">
+    <div id="repairModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Find a teacher</h3>
+                    <h3 class="modal-title">Repair instrument</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="row form-group">
-                                <label class="col-form-label col-12 col-sm-6" for="date">Date of meeting</label>
+                                <label class="col-form-label col-12 col-sm-6" for="date">Date</label>
 
                                 <div class="col-sm-6">
                                     <input class="form-control" type="date" name="date" id="date" placeholder="">
@@ -72,7 +72,7 @@
                             <div class="row form-group">
                                 <div class="col">
                                     <button type="submit" class="btn button-dark" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn button-mid">Search</button>
+                                    <button type="submit" class="btn button-mid" id = "confirmBtn">Confirm</button>
                                 </div>
                             </div>
                         </form>
@@ -175,11 +175,11 @@
                 </div>
             </div>
 
-            <a class="carousel-control-prev" href="javascript:return false;#instrumentCarousel " role="button">
+            <a class="carousel-control-prev" href="javascript:() => false;" role="button">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="javascript:return false;#instrumentCarousel" role="button">
+            <a class="carousel-control-next" href="javascript:() => false;" role="button">
                 <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Next</span>
             </a>

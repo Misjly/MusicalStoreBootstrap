@@ -136,12 +136,12 @@ a:hover {
 a:focus {
   color: #989595; }
 
-#findButton {
+#repairButton {
   width: 100%; }
 
-#findContainer {
+#repairContainer {
   padding: 0; }
-  #findContainer:active {
+  #repairContainer:active {
     box-shadow: 0rem 0rem 1rem #989595; }
 
 .activated {
