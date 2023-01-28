@@ -13,20 +13,38 @@ $color-gradient-second: #D3CAE2;
 
 $color-dark-hover: #6c6b6b;
 $color-mid-hover: #e0b566;
-$color-bright-hover: #fffbf7;
+$color-bright-hover: #bea6e5;
 
 $color-dark-focus: #989595;
-$color-mid-focus: #fbe1b5;
-$color-bright-focus: #ffffff;
+$color-mid-focus: #e6a22c;
+$color-bright-focus: #ae8be2;
 
 body {
     font-family: $font-body;
     background-color: $color-background;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    background-image: url("../img/background.jpg");
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    opacity: 90%;
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
+    opacity: 1;
 }
 
 .imgContainer {
@@ -51,13 +69,13 @@ img {
 
 .button-square {
     border-radius: 0;
-    background-color: $color-transparent !important;
-    color: white !important;
+    background-color: $color-black !important;
+    color: $color-bright-focus !important;
 }
 
 .button-square:hover {
     background-color: $color-black-transparent !important;
-    color: $color-gradient-second !important;
+    color: $color-bright-hover !important;
 }
 
 .button-square:focus {
@@ -65,7 +83,9 @@ img {
     color: $color-gradient-first !important;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: $font-h;
 }
 
@@ -111,14 +131,17 @@ h2 {
 }
 
 @media (min-width:768px) {
-    .carousel-inner {
-        display: flex;
-    }
-    
-    .carousel-item {
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(33.333333%);
+
+    .instrumentCarousel {
+        .carousel-inner {
+            display: flex;
+        }
+
+        .carousel-item {
+            display: block;
+            margin-right: 0;
+            flex: 0 0 calc(33.333333%);
+        }
     }
 }
 
@@ -132,6 +155,7 @@ h2 {
     .modal-header {
         background-image: linear-gradient(to right, $color-gradient-first, $color-gradient-second);
     }
+
     .modal-body {
         background-color: $color-background;
     }
@@ -186,9 +210,11 @@ h2 {
 a {
     color: $color-text;
 }
+
 a:hover {
     color: $color-dark-hover;
 }
+
 a:focus {
     color: $color-dark-focus;
 }
@@ -199,6 +225,7 @@ a:focus {
 
 #repairContainer {
     padding: 0;
+
     &:active {
         box-shadow: 0rem 0rem 1rem $color-dark-focus;
     }
@@ -208,7 +235,7 @@ a:focus {
     box-shadow: 0rem 0rem 0.5rem 0.5rem $color-gradient-second;
 }
 
-#loginTitle {
+.title {
     background-color: $color-gradient-first;
     border-radius: 0.25rem 0.25rem 0 0;
     padding: 0.5rem;
@@ -216,4 +243,20 @@ a:focus {
 
 #loginCard {
     min-width: 32rem;
+}
+
+#teacherCard {
+    min-width: 28rem;
+}
+
+.link {
+    color: $color-gradient-first;
+}
+
+.link:hover {
+    color: $color-mid-hover;
+}
+
+.link:focus {
+    color: $color-mid-focus;
 }

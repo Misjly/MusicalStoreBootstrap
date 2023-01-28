@@ -39,11 +39,11 @@
 
             <div class="collapse navbar-collapse" id="musicNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa fa-address-card fa-lg"></i> Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teachers.html"><i class="fa fa-user fa-lg"></i>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-user fa-lg"></i>
                             Teachers</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html"><i class="fa fa-id-badge fa-lg"></i> Log
                             In</a></li>
@@ -57,74 +57,105 @@
             <div class="col">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="login.html">Log In</a></li>
-                    <li class="breadcrumb-item active">Register</li>
+                    <li class="breadcrumb-item active">Teachers</li>
                 </ol>
             </div>
         </div>
 
         <div class="row row-content d-flex justify-content-center">
-            <div class="card">
+            <div class="card" id="teacherCard">
                 <div class="card-body">
                     <div class="card-title text-center title">
-                        <h3>Register</h3>
+                        <h3>Fill info to find a teacher</h3>
                     </div>
                     <div class="card-text">
                         <form>
-                            <div class="form-group row">
-                                <div class="col-lg-11">
-                                    <input type="email" class="form-control" placeholder="Email" required />
+                            <div class="form-group row mx-1">
+                                <div class="col-10">
+                                    <input type="email" class="form-control" placeholder="Email for contact" required />
                                 </div>
-                                <div class="col px-0 text-danger">
+
+                                <div class="col text-danger">
                                     <span>*</span>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-lg-11">
-                                    <input type="password" class="form-control" placeholder="Password" required />
+                            <div class="form-group row mx-1">
+                                <div class="col-10">
+                                    <input type="tel" class="form-control" placeholder="Phone for contact" required />
                                 </div>
-                                <div class="col px-0 text-danger">
+
+                                <div class="col text-danger">
                                     <span>*</span>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-lg-11">
-                                    <input type="password" class="form-control" placeholder="Confirm Password"
-                                        required />
+                            <div class="row form-group mx-1">
+                                <div class="col-5">
+                                    <label class="form-label" for="teacherCity">City</label>
                                 </div>
-                                <div class="col px-0 text-danger">
+
+                                <div class="col-5">
+                                    <select id="teacherCity" class="form-control" required>
+                                        <option value="">Select</option>
+                                        <option value="city1">city 1</option>
+                                        <option value="city2">city 2</option>
+                                        <option value="city3">city 3</option>
+                                        <option value="city4">city 4</option>
+                                        <option value="city5">city 5</option>
+                                    </select>
+                                </div>
+
+                                <div class="col text-danger">
                                     <span>*</span>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col">
-                                    <a href="login.html">Already have an account?</a>
+                            <div class="row form-group mx-1">
+                                <div class="col col-12 col-sm-5">
+                                    <label class="form-label" for="instrumentTypeTeacher">Instrument</label>
+                                </div>
+
+                                <div class="col-5">
+                                    <select id="instrumentTypeTeacher" class="form-control" required>
+                                        <option value="">Select</option>
+                                        <option value="acoustic_guitar">Acoustic guitar</option>
+                                        <option value="bass">Bass</option>
+                                        <option value="classical_guitar">Classical guitar</option>
+                                        <option value="drums">Drums</option>
+                                        <option value="electric_guitar">Electric guitar</option>
+                                        <option value="piano">Piano</option>
+                                        <option value="violin">Violin</option>
+                                    </select>
+                                </div>
+
+                                <div class="col text-danger">
+                                    <span>*</span>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="First Name" />
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Last Name" />
+                            <div class="form-group row mx-1">
+                                <div class="col-10">
+                                    <input type="text" class="form-control" placeholder="Name of student" />
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-lg-12">
-                                    <input type="tel" class="form-control" placeholder="Tel. number" />
+                            <div class="form-group row mx-1">
+                                <div class="col-10">
+                                    <input type="number" class="form-control" placeholder="Age of student" />
                                 </div>
                             </div>
 
-                            <div class="row form-group d-flex justify-content-center">
-                                <label class="col-form-label" for="date">May we send you emails about our
+                            <div class="form-group row mx-1">
+                                <div class="col-10">
+                                    <input type="text" class="form-control" placeholder="Experience" />
+                                </div>
+                            </div>
+
+                            <div class="row form-group mx-1">
+                                <label class="col-form-label col-10" for="date">May we send you emails about our
                                     offers?</label>
-                                <div class="col-md-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                <div class="col-5 btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn button-mid activated labelYes">
                                         <input type="radio" value="yes" checked>
                                         Yes
@@ -135,9 +166,15 @@
                                 </div>
                             </div>
 
-                            <div class="form-group row text-center">
+                            <div class="form-group row">
+                                <div class="col mx-3">
+                                    <a href="mailto:musicalco@gmail.com" class="link"><u>Want to become one?</u></a>
+                                </div>
+                            </div>
+
+                            <div class="form-group row text-center mt-5">
                                 <div class="col">
-                                    <button type="submit" class="btn button-mid">Register</button>
+                                    <button type="submit" class="btn button-mid">Confirm</button>
                                 </div>
                             </div>
                         </form>

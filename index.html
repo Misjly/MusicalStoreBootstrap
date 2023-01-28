@@ -44,12 +44,12 @@
                         <form>
                             <div class="row form-group">
                                 <div class="col col-12 col-sm-6">
-                                    <label class="form-label" for="instrumentType">Instrument</label>
+                                    <label class="form-label" for="instrumentTypeRepair">Instrument</label>
                                 </div>
 
-                                <div class="col">
-                                    <select name="instrumentType" id="instrumentType" class="form-control">
-                                        <option selected>Select</option>
+                                <div class="col-5">
+                                    <select id="instrumentTypeRepair" class="form-control" required>
+                                        <option value="">Select</option>
                                         <option value="acoustic_guitar">Acoustic guitar</option>
                                         <option value="bass">Bass</option>
                                         <option value="classical_guitar">Classical guitar</option>
@@ -59,13 +59,40 @@
                                         <option value="violin">Violin</option>
                                     </select>
                                 </div>
+
+                                <div class="col text-danger">
+                                    <span>*</span>
+                                </div>
                             </div>
 
                             <div class="row form-group">
-                                <label class="col-form-label col-12 col-sm-6" for="date">Date</label>
+                                <label class="col-form-label col-12 col-sm-6" for="reapairDate">Date</label>
 
-                                <div class="col-sm-6">
-                                    <input class="form-control" type="date" name="date" id="date" placeholder="">
+                                <div class="col-sm-5">
+                                    <input class="form-control" id="reapairDate" type="date" placeholder="">
+                                </div>
+
+                                <div class="col text-danger">
+                                    <span>*</span>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <label class="col-form-label col-12 col-sm-6" for="repairLocation">Location</label>
+
+                                <div class="col-5">
+                                    <select id="repairLocation" class="form-control" required>
+                                        <option value="">Select</option>
+                                        <option value="location1">location 1</option>
+                                        <option value="location2">location 2</option>
+                                        <option value="location3">location 3</option>
+                                        <option value="location4">location 4</option>
+                                        <option value="location5">location 5</option>
+                                    </select>
+                                </div>
+
+                                <div class="col text-danger">
+                                    <span>*</span>
                                 </div>
                             </div>
 
@@ -104,7 +131,7 @@
     </nav>
 
     <div class="container">
-        <div id="instrumentCarousel" class="carousel" data-ride="carousel" data-interval="3000">
+        <div class="carousel instrumentCarousel" data-ride="carousel" data-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active instrumentCarouselImg">
                     <div class="card">
@@ -179,11 +206,11 @@
                 </div>
             </div>
 
-            <a class="carousel-control-prev" href="javascript:() => false;" role="button">
+            <a class="carousel-control-prev" id="control-prev" href="javascript:() => false;" role="button">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="javascript:() => false;" role="button">
+            <a class="carousel-control-next" id="control-next" href="javascript:() => false;" role="button">
                 <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -207,8 +234,57 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-nowrap">There could've been photos of teachers</h2>
+            <div class="col-12 col-md-8 text-center">
+                <h2>Gifts, charms, keychains for musicians and music enthusiasts</h3>
+            </div>
+
+            <div class="carousel col-md-4" id="charmCarousel" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active instrumentCarouselImg">
+                        <div class="card">
+                            <div class="imgContainer">
+                                <img src="img/guitarCharm.jpg" alt="Guitar Charm">
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="btn button-mid w-100 button-square">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item instrumentCarouselImg">
+                        <div class="card">
+                            <div class="imgContainer">
+                                <img src="img/clarinetCharm.jpg" alt="Clarinet Charm">
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="btn button-mid w-100 button-square">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item instrumentCarouselImg">
+                        <div class="card">
+                            <div class="imgContainer">
+                                <img src="img/kalimbaCharm.jpg" alt="Kalimba Charm">
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="btn button-mid w-100 button-square">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev button-dark" href="#charmCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next button-dark" href="#charmCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>

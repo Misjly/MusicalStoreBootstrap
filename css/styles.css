@@ -1,10 +1,26 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #F6EDE3; }
+  background-color: #F6EDE3;
+  position: relative; }
+
+body::after {
+  content: "";
+  background-image: url("../img/background.jpg");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.container {
+  opacity: 90%; }
 
 img {
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+  opacity: 1; }
 
 .imgContainer {
   max-width: 100%;
@@ -25,18 +41,20 @@ img {
 
 .button-square {
   border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.05) !important;
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #ae8be2 !important; }
 
 .button-square:hover {
   background-color: rgba(0, 0, 0, 0.2) !important;
-  color: #D3CAE2 !important; }
+  color: #bea6e5 !important; }
 
 .button-square:focus {
   background-color: rgba(0, 0, 0, 0.6) !important;
   color: #E6C17A !important; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 h2 {
@@ -73,9 +91,9 @@ h2 {
   padding: 1rem; }
 
 @media (min-width: 768px) {
-  .carousel-inner {
+  .instrumentCarousel .carousel-inner {
     display: flex; }
-  .carousel-item {
+  .instrumentCarousel .carousel-item {
     display: block;
     margin-right: 0;
     flex: 0 0 calc(33.333333%); } }
@@ -115,16 +133,16 @@ h2 {
   background-color: #e0b566; }
 
 .button-mid:focus {
-  box-shadow: 0 0 0.5rem #fbe1b5; }
+  box-shadow: 0 0 0.5rem #e6a22c; }
 
 .button-bright {
   background-color: #F6EDE3; }
 
 .button-bright:hover {
-  background-color: #fffbf7; }
+  background-color: #bea6e5; }
 
 .button-bright:focus {
-  box-shadow: 0 0 0.5rem #ffffff; }
+  box-shadow: 0 0 0.5rem #ae8be2; }
 
 a {
   color: #404041; }
@@ -146,10 +164,22 @@ a:focus {
 .activated {
   box-shadow: 0rem 0rem 0.5rem 0.5rem #D3CAE2; }
 
-#loginTitle {
+.title {
   background-color: #E6C17A;
   border-radius: 0.25rem 0.25rem 0 0;
   padding: 0.5rem; }
 
 #loginCard {
   min-width: 32rem; }
+
+#teacherCard {
+  min-width: 28rem; }
+
+.link {
+  color: #E6C17A; }
+
+.link:hover {
+  color: #e0b566; }
+
+.link:focus {
+  color: #e6a22c; }

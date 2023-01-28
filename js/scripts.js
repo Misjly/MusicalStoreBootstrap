@@ -2,14 +2,14 @@ $("#repairButton").on("click", function () {
   $("#repairModal").modal();
 });
 
-$("#labelYes").on("click", function () {
+$(".labelYes").on("click", function () {
   $(this).addClass("activated");
-  $("#labelNo").removeClass("activated");
+  $(".labelNo").removeClass("activated");
 });
 
-$("#labelNo").on("click", function () {
+$(".labelNo").on("click", function () {
   $(this).addClass("activated");
-  $("#labelYes").removeClass("activated");
+  $(".labelYes").removeClass("activated");
 });
 
 let carouselWidth;
@@ -17,7 +17,7 @@ let cardWidth;
 let scrollPosition = 0;
 let numberOfCards = 3;
 
-$(".carousel-control-next").on("click", function () {
+$("#control-next").on("click", function () {
   cardWidth = $(".carousel-item").width();
   carouselWidth = $(".carousel-inner")[0].scrollWidth;
 
@@ -29,7 +29,7 @@ $(".carousel-control-next").on("click", function () {
   $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 1000);
 });
 
-$(".carousel-control-prev").on("click", function () {
+$("#control-prev").on("click", function () {
   cardWidth = $(".carousel-item").width();
   if (scrollPosition > 0) {
     scrollPosition -= cardWidth;
